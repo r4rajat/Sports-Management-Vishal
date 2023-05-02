@@ -35,12 +35,6 @@ def view_all_sports():
     return data
 
 
-def view_only_sport_name():
-    c.execute("select Sname from sports")
-    data = c.fetchall()
-    return data
-
-
 def view_only_sport_id():
     c.execute("select Sid from sports")
     data = c.fetchall()
@@ -49,12 +43,6 @@ def view_only_sport_id():
 
 def get_sport_id(Sid):
     c.execute("select * from sports where Sid='{}'".format(Sid))
-    data = c.fetchall()
-    return data
-
-
-def get_sport_name(Sname):
-    c.execute("select * from sports where Sname='{}'".format(Sname))
     data = c.fetchall()
     return data
 
@@ -97,12 +85,6 @@ def view_all_coaches():
     return data
 
 
-def view_only_coach():
-    c.execute("select Cname from coach")
-    data = c.fetchall()
-    return data
-
-
 def view_only_coach_id():
     c.execute("select Cid from coach")
     data = c.fetchall()
@@ -111,12 +93,6 @@ def view_only_coach_id():
 
 def get_coach_id(Cid):
     c.execute("select * from coach where Cid='{}'".format(Cid))
-    data = c.fetchall()
-    return data
-
-
-def get_coach_name(Cname):
-    c.execute("select * from coach where Cname='{}'".format(Cname))
     data = c.fetchall()
     return data
 
@@ -155,12 +131,6 @@ def view_all_leagues():
     return data
 
 
-def view_only_league():
-    c.execute("select Lname from league")
-    data = c.fetchall()
-    return data
-
-
 def view_only_league_id():
     c.execute("select Lid from league")
     data = c.fetchall()
@@ -169,12 +139,6 @@ def view_only_league_id():
 
 def get_league_id(Lid):
     c.execute("select * from league where Lid='{}'".format(Lid))
-    data = c.fetchall()
-    return data
-
-
-def get_league(Lname):
-    c.execute("select * from league where Lname='{}'".format(Lname))
     data = c.fetchall()
     return data
 
@@ -259,12 +223,6 @@ def view_all_teams():
     return data
 
 
-def view_only_team():
-    c.execute("select Tname from teams")
-    data = c.fetchall()
-    return data
-
-
 def view_only_team_id():
     c.execute("select Tid from teams")
     data = c.fetchall()
@@ -273,12 +231,6 @@ def view_only_team_id():
 
 def get_team_id(Tid):
     c.execute("select * from teams where Tid='{}'".format(Tid))
-    data = c.fetchall()
-    return data
-
-
-def get_team(Tname):
-    c.execute("select * from teams where Tname='{}'".format(Tname))
     data = c.fetchall()
     return data
 
@@ -319,12 +271,6 @@ def view_all_players():
     return data
 
 
-def view_only_player():
-    c.execute("select Sname from players")
-    data = c.fetchall()
-    return data
-
-
 def view_only_player_id():
     c.execute("select Pid from players")
     data = c.fetchall()
@@ -333,12 +279,6 @@ def view_only_player_id():
 
 def get_player_id(Pid):
     c.execute("select * from players where Pid='{}'".format(Pid))
-    data = c.fetchall()
-    return data
-
-
-def get_player(Fname):
-    c.execute("select * from players where Fname='{}'".format(Fname))
     data = c.fetchall()
     return data
 
