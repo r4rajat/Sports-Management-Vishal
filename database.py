@@ -1,7 +1,17 @@
+import os
 import mysql.connector
+from dotenv import load_dotenv
 
-mydb = mysql.connector.connect(host="localhost", port="6603", user="root", password="t*U6RW8ex@*&Cgz",
-                               database="sports_mgmt_db")
+load_dotenv()
+
+DB_HOST = os.getenv('DB_HOST')
+DB_PORT = os.getenv('DB_PORT')
+DB_USERNAME = os.getenv('DB_USERNAME')
+DB_PASSWORD = os.getenv('DB_PASSWORD')
+DB_DATABASE = os.getenv('DB_DATABASE')
+
+mydb = mysql.connector.connect(host=DB_HOST, port=DB_PORT, user=DB_USERNAME, password=DB_PASSWORD,
+                               database=DB_DATABASE)
 
 if mydb:
     print("Database Connected Successfully !")
