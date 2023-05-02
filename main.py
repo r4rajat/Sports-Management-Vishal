@@ -157,8 +157,9 @@ def main():
     st.sidebar.write("")
     st.sidebar.write("Done by:")
     st.sidebar.write("Vishal Chouhan")
-    st.sidebar.write("ROLL No.")
-    st.sidebar.write("SEM, SECTION")
+    st.sidebar.write("Roll No. 97")
+    st.sidebar.write("PRN 1062201930")
+    st.sidebar.write("TYBBA-CA")
 
 
 if __name__ == '__main__':
